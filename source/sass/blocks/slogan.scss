@@ -1,0 +1,12 @@
+.slogan__container {
+background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.slogan__title {
+  @include oswald-regular;
+  text-align: center
+}
