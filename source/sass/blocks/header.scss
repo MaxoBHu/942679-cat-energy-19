@@ -1,8 +1,12 @@
 .page-header__container {
-  margin: 0 auto;
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
+}
+
+.page-header__logotype {
+  margin-left: 20px;
+  margin-top: 10px;
 }
