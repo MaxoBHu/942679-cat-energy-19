@@ -1,0 +1,6 @@
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
