@@ -1,0 +1,14 @@
+.button {
+  @include oswald-regular;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:280px;
+  height:40px;
+  font-size:14px;
+  line-height: 18px;
+  background-color: $decoration-color;
+  color:$slogan-text-color;
+  text-transform:uppercase;
+  margin: 0 auto;
+}

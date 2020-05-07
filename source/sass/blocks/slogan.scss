@@ -1,0 +1,27 @@
+.slogan__container {
+  background: url(../img/index-background-mobile@1x.jpg) no-repeat;
+}
+
+.slogan__title {
+  @include oswald-regular;
+  color: $slogan-text-color;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 26px;
+}
+
+.slogan__text {
+  @include oswald-regular;
+  color: $slogan-text-color;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.slogan__button {
+  margin-top: -2px;
+}

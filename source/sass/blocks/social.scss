@@ -1,0 +1,11 @@
+.social {
+  @include reset-list;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+  }
+
