@@ -1,0 +1,11 @@
+.catalog__list {
+  @include reset-list;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.catalog__header {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 28px;
+  padding-right: 25px;
+}
