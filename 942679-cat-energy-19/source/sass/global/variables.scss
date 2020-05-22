@@ -1,9 +1,6 @@
 //widths
-$mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
-$mobile-width-only: 767px;
-
 
 //fonts
 $main-font: "Arial", sans-serif;
@@ -18,20 +15,15 @@ $quaternary-text-color: #222222;
 $main-bg-color: #ffffff;
 $secondary-bg-color: #f2f2f2;
 
-$border-color: #e6e6e6;
+$border-color: #ededed;
 $input-active-color: #444444;
 $input-error-color: #ff8282;
-$checkbox-active-color: #bababa;
+$checkbox-active-color:#bababa;
 
 $decoration-color: #68b738;
 
 $button-active-color: #68b738;
 $secondary-button-color: #f2f2f2;
+$secondary-button-active-color:#ebebeb;
 
-$secondary-button-active-color: #ebebeb;
-
-$border: 1px solid $border-color;
-
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
 

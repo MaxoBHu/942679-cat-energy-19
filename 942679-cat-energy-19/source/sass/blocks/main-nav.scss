@@ -1,0 +1,33 @@
+.main-nav {
+  display: none;
+}
+
+.page-header__toggle-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+}
+
+.page-header__toggle-nav::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 26px;
+  width: 24px;
+  height: 2px;
+  background-color: #111111;
+  box-shadow: 0 8px 0 0 #111111, 0 16px 0 0 #111111;
+}
+
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
