@@ -1,16 +1,6 @@
-* {
-  box-sizing: border-box;
-}
 
 body {
-  min-width: 320px;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 18px;
-  color: $main-text-color;
-  background-color: $main-bg-color;
+  @include oswald-regular;
 }
 
 a {
@@ -22,7 +12,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -33,20 +23,5 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  @include oswald-regular;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  width:280px;
-  height:40px;
-  font-size:14px;
-  line-height: 18px;
-  background-color: $decoration-color;
-  color:$slogan-text-color;
-  text-transform:uppercase;
-  margin: 0 auto;
 }
 

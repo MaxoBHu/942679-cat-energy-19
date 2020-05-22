@@ -1,9 +1,13 @@
 .page-footer {
-  min-width: 320px;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  background-color: $secondary-bg-color;
 }
 
+.page-footer__social {
+  display: flex;
+  padding: 20px;
+  margin-top: 32px;
+  margin-bottom: 19px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
