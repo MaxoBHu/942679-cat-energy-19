@@ -12,14 +12,6 @@
   min-width: 280px;
   padding: 0 20px;
   margin: 0 auto;
-
-  &--addition {
-    margin-top: 29px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 72px;
-    }
-  }
 }
 
 .block-title {
@@ -119,7 +111,7 @@
       margin-top: 20px;
 
       @media (min-width: $desktop-width) {
-        margin-top: 49px;
+        margin-top: 47px;
       }
     }
 
@@ -139,6 +131,11 @@
     &--addition {
       padding-right: 37px;
       padding-left: 38px;
+      margin-top: -2px;
+
+      @media (min-width: $desktop-width) {
+        margin-top: -5px;
+      }
     }
 
     &--form {
@@ -193,6 +190,10 @@
   .wrapper {
     width: 1220px;
     padding: 0 40px;
+
+    &--index {
+      padding: 0 47px;
+    }
   }
 
   .block-title--form {

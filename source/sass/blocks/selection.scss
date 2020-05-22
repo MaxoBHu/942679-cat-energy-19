@@ -40,25 +40,3 @@
     padding-top: 34px;
   }
 }
-
-.selection__button {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-
-  @media (min-width: $tablet-width) {
-    width: 283px;
-    min-width: 283px;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 567px;
-    margin-top: 2px;
-    margin-left: 10px;
-  }
-}

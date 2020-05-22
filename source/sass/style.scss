@@ -3,7 +3,7 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/scaffolding.scss";
-@import "blocks/header.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/slogan.scss";
@@ -15,7 +15,6 @@
 @import "blocks/copyright.scss";
 @import "blocks/how.scss";
 @import "blocks/example.scss";
-@import "blocks/slider.scss";
 @import "blocks/catalog.scss";
 @import "blocks/catalog-item.scss";
 @import "blocks/button.scss";
@@ -24,4 +23,3 @@
 @import "blocks/gift.scss";
 @import "blocks/selection.scss";
 @import "blocks/form.scss";
-

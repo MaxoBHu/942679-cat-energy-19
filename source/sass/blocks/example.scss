@@ -256,7 +256,7 @@
 
   .example__text {
     width: 435px;
-    margin-top: 22px;
+    margin-top: 23px;
   }
 
   .example__top-wrapper {
@@ -266,8 +266,8 @@
   .example__middle-wrapper {
     margin-left: auto;
     padding-top: 48px;
-
     background-color: $secondary-bg-color;
+    padding-left: 47px;
 
     .wrapper {
       width: 530px;
@@ -283,6 +283,7 @@
     margin-right: auto;
     padding: 0;
     background: linear-gradient(to right, #f2f2f2 403px, #eaeaea 403px);
+    padding-left: 33px;
   }
 
   .example__middle-wrapper,
@@ -293,7 +294,6 @@
     min-height: 370px;
     margin-top: 11px;
     padding-bottom: 44px;
-    padding-left: 31px;
   }
 
   .example__slider {
@@ -434,10 +434,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     width: 325px;
-    padding-top: 5px;
-    font-size: 19px;
+    font-size: 20px;
     text-align: left;
     display: flex;
     justify-content: space-between;
+    line-height: 22px;
   }
 }
