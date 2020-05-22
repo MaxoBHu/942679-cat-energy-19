@@ -1,14 +1,6 @@
-* {
-  box-sizing: border-box;
-}
 
 body {
-  min-width: 320px;
-  color: $main-text-color;
-  background-color: $main-bg-color;
-  margin: 0 auto;
-  padding: 0;
-  overflow-x: hidden;
+  @include oswald-regular;
 }
 
 a {
@@ -32,6 +24,3 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-

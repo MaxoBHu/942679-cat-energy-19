@@ -2,10 +2,116 @@
   @include reset-list;
   padding: 0;
   margin: 0 auto;
+  border-top: $border;
 }
 
-.catalog__header {
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 28px;
-  padding-right: 25px;
+.catalog__item {
+  border-bottom: $border;
+}
+
+.catalog__more {
+  padding: 63px 20px 24px 20px;
+  overflow: hidden;
+  text-align: center;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center 26px;
+  background-size: 31px 31px;
+  border-bottom: $border;
+}
+
+.catalog__more-title {
+  margin-bottom: -4px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
+
+.catalog__more-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $main-font;
+  color: $secondary-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 30px;
+    border: 0;
+  }
+
+  .catalog__item {
+    display: flex;
+    margin-right: 60px;
+    margin-top: 138px;
+    width: 45.6%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__more {
+    flex-direction: column;
+    align-items: center;
+    border: $border;
+    padding: 0;
+    padding-top: 165px;
+    background-image: url("../img/icon-plus.svg");
+    background-position: center 54px;
+    background-size: 61px 61px;
+  }
+
+  .catalog__more-wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 32px;
+    border: none;
+  }
+
+  .catalog__more-title {
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .catalog__more-text {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 43px;
+  }
+
+  .catalog__item {
+    width: 244px;
+    margin-right: 80px;
+    margin-bottom: 4px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }

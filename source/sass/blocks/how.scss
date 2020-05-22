@@ -1,99 +1,170 @@
-.info {
-  margin: 20 auto;
-  padding-bottom: 22px;
-}
-.how__list {
-  @include reset-list;
-  display: flex;
-  flex-direction: column;
+.how {
+  overflow: hidden;
 }
 
-.how__title {
-  @include oswald-regular;
-  margin: 0;
-  font-size: 36px;
-  line-height: 60px;
-  text-align: left;
+.how span {
+  display: none;
+}
+
+.how__list {
+  margin-top: 31px;
+  padding-left: 80px;
+  list-style: none;
 }
 
 .how__item {
   position: relative;
-  width: 280px;
-  margin-bottom: 20px;
-  text-align: left;
+  max-width: 390px;
+  min-height: 60px;
+  margin-bottom: 18px;
+  padding-top: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    background-color: $decoration-color;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
-.how__item:first-child {
-  margin-top: 25px;
-}
-
-.how__item::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #68b738;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
-.how__item--advantage1::after {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 5px;
-  width: 50px;
-  height: 50px;
+.how__item--healthy::before {
   background-image: url("../img/advantage-leaf@1x.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
-.how__item--advantage2::after {
-  position: absolute;
-  content: "";
-  top: 4px;
-  left: 5px;
-  width: 50px;
-  height: 50px;
+.how__item--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
-.how__item--advantage3::after {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 4px;
-  width: 50px;
-  height: 50px;
+.how__item--quantity::before {
   background-image: url("../img/advantage-dining@1x.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
-.how__item--advantage4::after {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 5px;
-  width: 50px;
-  height: 50px;
+.how__item--period::before {
   background-image: url("../img/advantage-clock@1x.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .how__text {
-  margin: 0;
-  padding-top: 2px;
-  padding-bottom: 4px;
-  padding-left: 80px;
-  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  margin-top: 0;
+
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  font-family: $main-font;
+  color: $main-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .how__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 41px;
+    padding-right: 79px;
+    margin-top: 22px;
+  }
+
+  .how__item {
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    min-height: 187px;
+    padding-top: 112px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      left: 114px;
+      z-index: -1;
+
+      font-size: 281px;
+      line-height: 281px;
+      color: $secondary-bg-color;
+    }
+  }
+
+  .how__item--healthy::after {
+    content: "1";
+  }
+
+  .how__item--powder::after {
+    content: "2";
+  }
+
+  .how__item--quantity::after {
+    content: "3";
+  }
+
+  .how__item--period::after {
+    content: "4";
+  }
+
+  .how__text {
+    width: 245px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .how span {
+    display: block;
+    padding-left: 5px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .how__list {
+    justify-content: flex-start;
+    padding-right: 0;
+  }
+
+  .how__item {
+    width: 22.3%;
+    min-height: 181px;
+    margin-right: 3.6%;
+    margin-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 3.6%;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how__list {
+    margin-top: 22px;
+  }
+
+  .how__item {
+    width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
