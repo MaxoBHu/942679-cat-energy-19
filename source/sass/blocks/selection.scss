@@ -1,0 +1,64 @@
+.selection__text {
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 65%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 8px;
+    width: 30%;
+  }
+}
+
+.selection__required {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $main-font;
+  text-align: center;
+  color: $main-text-color;
+  padding-top: 20px;
+  padding-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 185px;
+    padding-top: 25px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 382px;
+    padding-top: 34px;
+  }
+}
+
+.selection__button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    min-width: 283px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 567px;
+    margin-top: 2px;
+    margin-left: 10px;
+  }
+}

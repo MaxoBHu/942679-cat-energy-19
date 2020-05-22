@@ -1,11 +1,19 @@
 .page-footer__copyright {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  min-height: 34px;
 }
 
 .copyright__link {
-  color: #444444;
+  color: $main-text-color;
+  line-height: 1;
+  padding-top: 9px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
 }
 
-
+.copyright__image {
+  margin-top: 2px;
+  fill: #666666;
+  display: block;
+}

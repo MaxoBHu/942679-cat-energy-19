@@ -1,19 +1,53 @@
 .page-footer__contacts {
-  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
+
+.contacts {
+  background-color: $main-bg-color;
+
+  &--gray {
+    background-color: $secondary-bg-color;
+  }
+}
+
 .contacts__title {
-  @include oswald-regular;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $secondary-text-color;
-  margin-left: 20px;
-  margin-right: 5px;
+  max-width: 130px;
 }
+
 .contacts__text {
+  flex-shrink: 0;
+  width: 140px;
+  margin-top: 16px;
+  margin-left: auto;
+  overflow: hidden;
   font-size: 14px;
   line-height: 20px;
+  font-family: $main-font;
+  text-align: left;
+  color: $main-text-color;
+}
+
+.page-footer__map {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -38px;
+}
+
+.page-footer__map::after {
+  position: absolute;
+  content: "";
+  top: 177px;
+  left: 129px;
+  width: 55px;
+  height: 53px;
+  background-image: url("../img/map-pin.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

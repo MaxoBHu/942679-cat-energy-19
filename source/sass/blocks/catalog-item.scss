@@ -1,0 +1,140 @@
+.card__wrapper {
+  padding: 0 20px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card__info-wrapper {
+  overflow: hidden;
+}
+
+.card__title {
+  width: 75px;
+  margin-top: 21px;
+  margin-bottom: 11px;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
+
+.card__info-table {
+  padding-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $main-font;
+  color: $main-text-color;
+}
+
+.card__info-table tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 136px;
+}
+
+.card__info-table th {
+  display: block;
+  width: 50%;
+  padding: 0;
+  overflow: hidden;
+  font-weight: inherit;
+  text-align: left;
+}
+
+.card__info-table td {
+  display: block;
+  flex-shrink: 0;
+  width: 45px;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 430px;
+    padding: 0;
+    margin-left: 0;
+    background-color: $secondary-bg-color;
+    width: 100%;
+  }
+
+  .card__image {
+    width: 324px;
+    height: 174px;
+    margin-top: -55px;
+
+    &--big-pack {
+      width: 324px;
+      height: 208px;
+      margin-top: -89px;
+    }
+  }
+
+  .card__title {
+    width: 131px;
+    margin: 0 auto;
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .card__info-table {
+    display: block;
+    margin-top: 17px;
+    padding-bottom: 33px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .card__info-table tr {
+    width: 250px;
+    height: 1px;
+    min-height: 31px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card__info-table td {
+    width: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__wrapper {
+    width: 245px;
+    padding: 0;
+  }
+
+  .card__image {
+    width: 245px;
+    margin-top: -60px;
+
+    &--big-pack {
+      width: 245px;
+      height: 208px;
+      margin-top: -95px;
+    }
+  }
+
+  .card__title {
+    margin-top: 34px;
+  }
+
+  .card__info-table {
+    margin-top: 18px;
+  }
+
+  .card__info-table tr {
+    width: 169px;
+  }
+}
