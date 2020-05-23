@@ -126,6 +126,10 @@
     padding-bottom: 13px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .site-list__item {

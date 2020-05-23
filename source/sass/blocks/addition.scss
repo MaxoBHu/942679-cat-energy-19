@@ -1,8 +1,12 @@
-.catalog-addition {
+.addition {
   margin-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 62px;
   }
 }
 
@@ -16,9 +20,17 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .wrapper--addition {
+
+  .addition__list-wrapper {
+    margin-top: 29px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 74px;
+    }
+
+    @media (min-width: $desktop-width) {
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 75px;
   }
 }
