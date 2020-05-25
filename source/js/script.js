@@ -1,5 +1,9 @@
 // Меню
 'use strict';
+var docWidth = document.body.clientWidth,
+    tabletWidth = 768,
+    desktoptWidh = 1300;
+
 (window.onload = function () {
   document.querySelector('.main-nav--open').classList.remove('main-nav--open');
   document.querySelector('.main-nav__menu-toggle').style.opacity = 1;
@@ -37,6 +41,8 @@
     var toggle = document.querySelector('.slider__toggle');
     var toggleBefore = document.querySelector('.slider__button--before');
     var toggleAfter = document.querySelector('.slider__button--after');
+
+
 
     var switchSlide = function (before, after) {
       if (catAfter.classList.contains('slider__image-wrapper--visible') && before) {
@@ -136,3 +142,69 @@
       });
     }
   })();
+
+  // Карта
+
+  try {
+    ('use strict');
+    var myMap;
+    function init() {
+      document
+        .querySelector('.contacts__map-wrapper')
+        .classList.remove('contacts__map-wrapper');
+      var e;
+      document.body.clientWidth < 768
+        ? ((myMap = new ymaps.Map('map', {
+            center: [59.938631, 30.323055],
+            zoom: 17,
+          })).behaviors.disable('scrollZoom'),
+          (e = new ymaps.Placemark(
+            [59.938631, 30.323055],
+            {},
+            {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/map-pin.png',
+              iconImageSize: [60, 50],
+              iconImageOffset: [-30, -37],
+            }
+          )),
+          myMap.geoObjects.add(e))
+        : 768 <= document.body.clientWidth && document.body.clientWidth < 1300
+        ? ((myMap = new ymaps.Map('map', {
+            center: [59.938830, 30.323140],
+            zoom: 18,
+          })).behaviors.disable('scrollZoom'),
+          (e = new ymaps.Placemark(
+            [59.938631, 30.323055],
+            {},
+            {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/map-pin.png',
+              iconImageSize: [111, 93],
+              iconImageOffset: [-45, -118],
+            }
+          )),
+          myMap.geoObjects.add(e))
+        : 1300 <= document.body.clientWidth &&
+          ((myMap = new ymaps.Map('map', {
+            center: [59.938963, 30.319293],
+            zoom: 17,
+          })).behaviors.disable('scrollZoom'),
+          (e = new ymaps.Placemark(
+            [59.938631, 30.323055],
+            {},
+            {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/map-pin.png',
+              iconImageSize: [120, 102],
+              iconImageOffset: [-62, -106],
+            }
+          )),
+          myMap.geoObjects.add(e));
+    }
+    ymaps.ready(init);
+  } catch (err) {
+    alert(err.name);
+    alert(err.message);
+    alert(err.stack);
+  }

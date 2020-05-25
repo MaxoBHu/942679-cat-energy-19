@@ -1,9 +1,17 @@
+.selection {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .selection__text {
   width: 100%;
   overflow: hidden;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
@@ -13,6 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
     padding-left: 8px;
     width: 30%;
   }

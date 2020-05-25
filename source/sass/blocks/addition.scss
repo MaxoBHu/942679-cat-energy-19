@@ -20,17 +20,17 @@
   }
 }
 
+.addition__list-wrapper {
+  margin-top: 29px;
 
-  .addition__list-wrapper {
-    margin-top: 29px;
+  @media (min-width: $tablet-width) {
+    margin-top: 74px;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-top: 74px;
-    }
-
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     margin-top: 75px;
+    margin-bottom: 85px;
   }
 }
