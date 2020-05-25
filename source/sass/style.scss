@@ -1,16 +1,15 @@
-@import "../../node_modules/normalize.css/normalize";
+@import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/scaffolding.scss";
-@import "blocks/header.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
 @import "blocks/slogan.scss";
 @import "blocks/program.scss";
 @import "blocks/footer.scss";
 @import "blocks/contacts.scss";
-@import "blocks/footer-logotype.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/how.scss";
@@ -24,3 +23,4 @@
 @import "blocks/gift.scss";
 @import "blocks/selection.scss";
 @import "blocks/form.scss";
+@import "blocks/results.scss";

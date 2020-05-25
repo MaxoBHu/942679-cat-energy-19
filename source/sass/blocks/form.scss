@@ -5,6 +5,7 @@
     margin-top: 0;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 67px;
   }
 }
 
@@ -24,7 +25,6 @@
     margin-right: auto;
     margin-left: auto;
     padding: 0;
-    margin-bottom: 23px;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 14px;
@@ -59,6 +59,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 48px;
+    }
   }
 }
 
@@ -77,6 +81,10 @@
     line-height: 1;
     font-size: 20px;
     margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
   }
 
   &--radio {
@@ -181,16 +189,29 @@
   border: 0;
   flex-grow: 1;
   font-size: 16px;
-  outline: 0;
+  background-repeat: no-repeat;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid $input-active-color;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: $input-error-color;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding-left: 20px;
   }
 
-  &--email:focus + .form__icon--email,
-  &--tel:focus + .form__icon--tel {
-    fill: #68b738;
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+    padding-left: 20px;
   }
 }
 
@@ -218,24 +239,30 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 45px;
-    padding-left: 14px;
-    width: 570px;
     height: 160px;
-    margin-left: 17px;
+    position: relative;
+    width: 548px;
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    padding-top: 11px;
+    padding-bottom: 23px;
+    padding-left: 20px;
+    top: 49px;
+    right: -10px;
   }
 }
 
 .row__checkbox:checked + .row__title--checkbox::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 4px;
+  top: 5px;
+  left: 5px;
   width: 20px;
-  height: 12px;
+  height: 10px;
   border-bottom: 2px solid #68b738;
   border-left: 2px solid #68b738;
-  transform: rotate(-45deg);
+  transform: rotate(-46deg);
 
   @media (min-width: $tablet-width) {
     top: 18px;
@@ -249,6 +276,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    margin-top: 69px;
   }
 }
 
@@ -261,7 +289,7 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
+    margin-top: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -298,9 +326,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 25px;
-    margin-top: 2px;
-    width: 1187px;
+    padding-left: 16px;
+    width: 1190px;
+    margin-left: 8px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid $input-active-color;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: $input-error-color;
   }
 }
 
@@ -319,18 +359,26 @@
   }
 
   .form__personal {
+    position: relative;
     width: 570px;
-    padding-left: 38px;
     margin-right: 80px;
-    margin-top: 46px;
+    margin-left: auto;
+    padding: 0;
+    top: -15px;
+    right: -10px;
+    margin-bottom: 33px;
   }
 
-  .row__input--email-icon {
+  .form__personal input {
+    padding-right: 20px;
+  }
+
+  .row__input--email {
     width: 452px;
     margin-right: 79px;
   }
 
-  .row__input--tel-icon {
+  .row__input--tel {
     padding-left: 20px;
     width: 434px;
   }
@@ -342,4 +390,64 @@
   .row__title--checkbox:last-child {
     margin-right: 0;
   }
+}
+
+.user-contacts__icon {
+  position: absolute;
+  top: 12px;
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+  }
+
+  svg {
+    fill: #222222;
+  }
+
+  &--email {
+    right: 15px;
+
+    width: 18px;
+    height: 14px;
+
+    @media (min-width: $desktop-width) {
+      top: 14px;
+      right: 95px;
+    }
+  }
+
+  &--tel {
+    right: 12px;
+
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.row__input--email:focus ~ .user-contacts__icon svg {
+  fill: $decoration-color;
+}
+
+.row__input--email:invalid:not(:placeholder-shown) ~ .user-contacts__icon svg {
+  fill: #ff8282;
+}
+
+.row__input--tel:focus,
+.row__input--tel:focus ~ .user-contacts__icon svg {
+  fill: $decoration-color;
+}
+
+.row__input--tel:invalid:not(:placeholder-shown) ~ .user-contacts__icon svg {
+  fill: #ff8282;
+}
+
+.row__radio:active + .row__title--radio,
+.row__checkbox:active + .row__title--checkbox {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.row__radio:focus + .row__title--radio::before,
+.row__checkbox:focus + .row__title--checkbox::before {
+  outline: 1px solid #bababa;
 }
