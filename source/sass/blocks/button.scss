@@ -73,12 +73,14 @@
       padding-top: 11px;
       padding-bottom: 11px;
     }
+
     @media (min-width: $desktop-width) {
       width: 169px;
       min-width: 169px;
       margin-bottom: 28px;
     }
   }
+
   &--selection {
     width: 100%;
     cursor: pointer;
