@@ -34,3 +34,22 @@
     margin-bottom: 85px;
   }
 }
+
+.addition span {
+  padding-right: 22px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 37px;
+    padding-left: 38px;
+    margin-top: -2px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: -5px;
+      background: white;
+      padding-right: 36px;
+      padding-left: 39px;
+      margin-left: -38px;
+    }
+  }
+}

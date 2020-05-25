@@ -91,17 +91,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-top: 50px;
+  }
   .catalog__list {
     width: 1220px;
     margin: 0 auto;
     padding-left: 43px;
+    margin-top: 35px;
   }
 
   .catalog__item {
     width: 244px;
     margin-right: 80px;
     margin-bottom: 4px;
-
+    margin-top: 135px;
 
     &:nth-child(2n) {
       margin-right: 80px;

@@ -37,10 +37,10 @@ var docWidth = document.body.clientWidth,
     var TABLET_WIDTH = 768;
     var catBefore = document.querySelector('.slider__image-wrapper--before');
     var catAfter = document.querySelector('.slider__image-wrapper--after');
-    var bar = document.querySelector('.slider__bar');
-    var toggle = document.querySelector('.slider__toggle');
-    var toggleBefore = document.querySelector('.slider__button--before');
-    var toggleAfter = document.querySelector('.slider__button--after');
+    var bar = document.querySelector('.slider-wrapper__bar');
+    var toggle = document.querySelector('.slider-wrapper__toggle');
+    var toggleBefore = document.querySelector('.slider-wrapper__button--before');
+    var toggleAfter = document.querySelector('.slider-wrapper__button--after');
 
 
 

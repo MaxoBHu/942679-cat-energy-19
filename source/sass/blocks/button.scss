@@ -22,7 +22,6 @@
     color: rgba($main-bg-color, 0.3);
   }
 
-
   &--addition {
     margin-top: 15px;
 
@@ -73,12 +72,31 @@
       margin-bottom: 32px;
       padding-top: 11px;
       padding-bottom: 11px;
+    }
+    @media (min-width: $desktop-width) {
+      width: 169px;
+      min-width: 169px;
+      margin-bottom: 28px;
+    }
+  }
+  &--selection {
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
 
-      @media (min-width: $desktop-width) {
-        width: 169px;
-        min-width: 169px;
-        margin-bottom: 28px;
-      }
+    @media (min-width: $tablet-width) {
+      width: 283px;
+      min-width: 283px;
+      padding-top: 15px;
+      padding-bottom: 17px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 567px;
+      margin-top: 2px;
+      margin-left: 10px;
     }
   }
 
@@ -97,58 +115,33 @@
       opacity: 0.3;
     }
   }
+}
 
-  @media (min-width: $tablet-width) {
-    .button--card {
-      width: 249px;
-      min-width: 249px;
-      margin-top: -4px;
-      margin-bottom: 32px;
-      padding-top: 11px;
-      padding-bottom: 11px;
+@media (min-width: $tablet-width) {
+  .button--card {
+    width: 249px;
+    min-width: 249px;
+    margin-top: -4px;
+    margin-bottom: 32px;
+    padding-top: 11px;
+    padding-bottom: 11px;
 
-      @media (min-width: $desktop-width) {
-        width: 169px;
-        min-width: 169px;
-        margin-bottom: 28px;
-      }
-    }
-
-    .button--more {
-      width: 249px;
-      min-width: 249px;
-      margin-top: 85px;
-      margin-bottom: 14px;
-
-      @media (min-width: $desktop-width) {
-        width: 169px;
-        min-width: 169px;
-      }
+    @media (min-width: $desktop-width) {
+      width: 169px;
+      min-width: 169px;
+      margin-bottom: 28px;
     }
   }
 
-  .button--selection {
-    width: 100%;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 16px;
-
-    @media (min-width: $tablet-width) {
-      width: 283px;
-      min-width: 283px;
-      padding-top: 15px;
-      padding-bottom: 17px;
-      font-size: 20px;
-      line-height: 20px;
-    }
+  .button--more {
+    width: 249px;
+    min-width: 249px;
+    margin-top: 85px;
+    margin-bottom: 14px;
 
     @media (min-width: $desktop-width) {
-      width: 567px;
-      margin-top: 2px;
-      margin-left: 10px;
+      width: 169px;
+      min-width: 169px;
     }
   }
 }
